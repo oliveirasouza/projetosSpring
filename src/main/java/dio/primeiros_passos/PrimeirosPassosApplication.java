@@ -5,7 +5,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
+/**
+ * The main class for the Primeiros Passos application.
+ * This class is annotated with @SpringBootApplication, indicating it's the entry point for the Spring Boot application.
+ */
 @SpringBootApplication
 public class PrimeirosPassosApplication {
     public static void main(String[] args) {
