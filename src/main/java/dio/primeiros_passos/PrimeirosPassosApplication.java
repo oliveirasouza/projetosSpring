@@ -24,5 +24,4 @@ public class PrimeirosPassosApplication {
             System.out.println("Localidade: " + response.getLocalidade());
         };
     }
-
 }
