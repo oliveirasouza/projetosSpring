@@ -20,7 +20,6 @@ public class PrimeirosPassosApplication {
     public static void main(String[] args) {
         SpringApplication.run(PrimeirosPassosApplication.class, args);
     }
-
     /**
      * Defines a CommandLineRunner bean that demonstrates JSON conversion.
      * This method creates a sample JSON string, converts it to a ViaCepResponse object,
