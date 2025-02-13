@@ -11,10 +11,25 @@ import org.springframework.context.annotation.Bean;
  */
 @SpringBootApplication
 public class PrimeirosPassosApplication {
+    /**
+     * The main method which serves as the entry point for the application.
+     * It uses SpringApplication to bootstrap and launch the Spring application.
+     *
+     * @param args Command line arguments passed to the application.
+     */
     public static void main(String[] args) {
         SpringApplication.run(PrimeirosPassosApplication.class, args);
     }
 
+    /**
+     * Defines a CommandLineRunner bean that demonstrates JSON conversion.
+     * This method creates a sample JSON string, converts it to a ViaCepResponse object,
+     * and prints the results to the console.
+     *
+     * @param conversor An instance of ConversorJson used to convert JSON to ViaCepResponse.
+     * @return A CommandLineRunner functional interface implementation.
+     * @throws Exception If an error occurs during execution.
+     */
     @Bean
     public CommandLineRunner run(ConversorJson conversor) throws Exception {
         return args -> {
